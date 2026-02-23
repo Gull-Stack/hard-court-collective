@@ -1,0 +1,62 @@
+<form class="contact-form" action="/api/contact" method="POST" id="contactForm">
+  <!-- Honeypot field (hidden) -->
+  <input type="text" name="fax_number" class="honeypot" tabindex="-1" aria-hidden="true">
+  
+  <!-- Timestamp token (hidden) -->
+  <input type="hidden" name="_timestamp" id="timestampField">
+  
+  <!-- Form fields -->
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Full Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email Address <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+    </div>
+  </div>
+  
+  <div class="form-row">
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone">
+    </div>
+    
+    <div class="form-group">
+      <label for="business">Business Name</label>
+      <input type="text" id="business" name="business">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="role">I am a... <span class="required">*</span></label>
+    <select id="role" name="role" required>
+      <option value="">Please select</option>
+      <option value="Court Builder">Court Builder</option>
+      <option value="Facility Owner">Facility Owner</option>
+      <option value="Supplier">Supplier</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label for="message">Project/Inquiry Details <span class="required">*</span></label>
+    <textarea id="message" name="message" rows="6" required placeholder="Tell us about your marketing needs, current challenges, or specific projects you'd like to discuss..."></textarea>
+  </div>
+  
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-large">
+    <span class="btn-text">Join the Collective</span>
+    <span class="btn-loading" style="display: none;">Sending...</span>
+  </button>
+  
+  <!-- Form messages -->
+  <div class="form-message" id="formMessage" style="display: none;"></div>
+  
+  <!-- Privacy note -->
+  <p class="form-privacy">
+    <small>We respect your privacy. Your information will never be shared with third parties. We'll use your details only to respond to your inquiry and provide relevant marketing resources.</small>
+  </p>
+</form>

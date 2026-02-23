@@ -1,0 +1,78 @@
+{
+  "name": "Hard Court Collective",
+  "tagline": "Marketing Built for Performance",
+  "description": "The premier AI-powered marketing platform for sports surface professionals. Websites, SEO, lead generation, and marketing automation for court builders, facility owners, and suppliers.",
+  "url": "https://hardcourtcollective.com",
+  "phone": "",
+  "email": "info@hardcourtcollective.com",
+  "address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "zip": ""
+  },
+  "colors": {
+    "primary": "#1B365D",
+    "secondary": "#6C757D",
+    "accent": "#2E7D32",
+    "light": "#f0f4f8",
+    "dark": "#212529"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "ga4": "",
+  "schemaType": "ProfessionalService",
+  "nav": [
+    {
+      "label": "Services",
+      "url": "/services/"
+    },
+    {
+      "label": "Industries",
+      "url": "/industries/"
+    },
+    {
+      "label": "Case Studies",
+      "url": "/case-studies/"
+    },
+    {
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "label": "Contact",
+      "url": "/contact/"
+    }
+  ],
+  "services": [
+    {
+      "name": "Website Development",
+      "description": "Professional websites built for sports surface contractors",
+      "url": "/services/#websites"
+    },
+    {
+      "name": "SEO & Marketing",
+      "description": "Get found by facility owners searching for quality contractors",
+      "url": "/services/#seo"
+    },
+    {
+      "name": "Lead Generation",
+      "description": "Automated lead generation that works while you build",
+      "url": "/services/#leads"
+    },
+    {
+      "name": "AI Marketing Automation",
+      "description": "Next-gen marketing technology for sports surface pros",
+      "url": "/services/#ai"
+    }
+  ],
+  "team": [],
+  "cta": {
+    "text": "Join the Collective",
+    "url": "/contact/"
+  },
+  "footerLinks": []
+}
