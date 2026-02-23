@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Fade-in animation on scroll (optional enhancement)
   initializeFadeInAnimation();
+  
+  // Navbar scroll detection
+  initializeNavbarScroll();
 });
 
 /**
@@ -263,6 +266,43 @@ function initializeFadeInAnimation() {
     element.style.animationPlayState = 'paused';
     observer.observe(element);
   });
+}
+
+/**
+ * Utility function to debounce rapid function calls
+ */
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+/**
+ * Navbar scroll detection for backdrop blur effect
+ */
+function initializeNavbarScroll() {
+  const header = document.querySelector('.header');
+  
+  if (header) {
+    const handleScroll = throttle(() => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, 16); // ~60fps
+    
+    window.addEventListener('scroll', handleScroll);
+    
+    // Check initial state
+    handleScroll();
+  }
 }
 
 /**

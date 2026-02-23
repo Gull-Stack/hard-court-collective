@@ -4,7 +4,7 @@ description: "{{ site.description }}"
 layout: base.njk
 ---
 
-{# HERO SECTION - StoryBrand: Problem + Solution #}
+{# HERO SECTION #}
 <section class="hero">
   <div class="container">
     <div class="hero-content">
@@ -16,40 +16,47 @@ layout: base.njk
         <a href="{{ site.cta.url | url }}" class="btn btn-primary btn-large">{{ site.cta.text }}</a>
         <a href="/case-studies/" class="btn btn-outline btn-large">View Success Stories</a>
       </div>
-    </div>
-    
-    {# Trust Bar #}
-    <div class="trust-bar" style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; opacity: 0.8; font-size: 0.9rem;">
-      <div><strong>500+</strong> Builders</div>
-      <div><strong>$2.8M</strong> in Leads Generated</div>
-      <div><strong>98%</strong> Client Satisfaction</div>
+      
+      {# Stats Bar #}
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Builders</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">$2.8M</div>
+          <div class="stat-label">in Leads Generated</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-{# STAKES/PROBLEM SECTION - The cost of invisible marketing #}
-<section class="section" id="learn-more">
+{# PROBLEM SECTION #}
+<section class="section section-light" id="learn-more">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">The Challenge</span>
       <h2>The Cost of Invisible Marketing Is Killing Your Business</h2>
       <p>You build incredible courts, but nobody finds you online. Every day facility owners, schools, and HOAs search Google for quality contractors. If you're not there, here's what happens:</p>
     </div>
     
     <div class="grid grid-3">
       <div class="card">
-        <div class="card-icon">🏆</div>
         <h3>The $200K Project Goes to Someone Else</h3>
         <p>That flashy website contractor gets the call. Your superior craftsmanship never gets a chance to compete because the client never knew you existed.</p>
       </div>
       
       <div class="card">
-        <div class="card-icon">📞</div>
         <h3>Your Phone Stays Silent</h3>
         <p>No website means no leads. No SEO means no visibility. You're competing on referrals while others dominate the 80% of customers who search online first.</p>
       </div>
       
       <div class="card">
-        <div class="card-icon">💰</div>
         <h3>You're Stuck in the Referral Game</h3>
         <p>Word-of-mouth only scales so far. Without digital marketing, you're limited to whoever happens to know someone who knows someone who needs courts.</p>
       </div>
@@ -57,70 +64,70 @@ layout: base.njk
   </div>
 </section>
 
-{# SUCCESS/RESOLUTION SECTION - What life looks like with HCC #}
-<section class="section section-light">
+{# SUCCESS SECTION #}
+<section class="section">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">The Solution</span>
       <h2>Imagine Consistent Leads While You Focus on Building</h2>
       <p>Here's what becomes possible when you join Hard Court Collective:</p>
     </div>
     
     <div class="grid grid-2">
       <div>
-        <h3>✅ Your Phone Rings With Quality Projects</h3>
+        <h3 class="mb-md">Your Phone Rings With Quality Projects</h3>
         <p>Facility owners find YOU first when they search. Premium clients who value quality craftsmanship call you directly instead of shopping price with random contractors.</p>
         
-        <h3>✅ You Pick the Projects You Want</h3>
+        <h3 class="mb-md">You Pick the Projects You Want</h3>
         <p>Stop chasing every lead. With consistent marketing-generated opportunities, you can focus on the courts you love building for clients who appreciate quality work.</p>
         
-        <h3>✅ Professional Web Presence That Wins Trust</h3>
+        <h3 class="mb-md">Professional Web Presence That Wins Trust</h3>
         <p>Your website showcases expertise, certifications, and portfolio. Clients feel confident choosing you before they even call for a quote.</p>
       </div>
       
       <div>
         <div class="card">
-          <p><em>"We went from zero online presence to Page 1 rankings for 'tennis court contractor Portland' in 60 days. First month generated $47K in new projects. Finally competing at our skill level."</em></p>
-          <p><strong>– Best Sports Surfaces, Portland</strong></p>
+          <p class="text-large"><em>"We went from zero online presence to Page 1 rankings for 'tennis court contractor Portland' in 60 days. First month generated $47K in new projects. Finally competing at our skill level."</em></p>
+          <p class="mb-0"><strong>– Best Sports Surfaces, Portland</strong></p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-{# 3-STEP PLAN SECTION - How HCC works #}
-<section class="section">
+{# PROCESS SECTION - Dark for high impact #}
+<section class="section section-dark">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">How It Works</span>
       <h2>Here's How We Make It Simple</h2>
       <p>Our proven 3-step process takes you from invisible to industry leader:</p>
     </div>
     
     <div class="grid grid-3">
       <div class="card">
-        <div class="card-icon">1</div>
-        <h3>Join the Collective</h3>
+        <h3>1. Join the Collective</h3>
         <p>Tell us about your specialties, service area, and goals. We analyze your local market and competitive landscape to build your custom strategy.</p>
       </div>
       
       <div class="card">
-        <div class="card-icon">2</div>
-        <h3>We Build Your Marketing Engine</h3>
+        <h3>2. We Build Your Marketing Engine</h3>
         <p>Professional website, local SEO, lead generation systems, and AI-powered automation. Everything launches simultaneously for maximum impact.</p>
       </div>
       
       <div class="card">
-        <div class="card-icon">3</div>
-        <h3>You Focus on What You Do Best</h3>
+        <h3>3. You Focus on What You Do Best</h3>
         <p>Qualified leads flow in automatically. You build incredible courts while we handle the marketing, lead nurturing, and client acquisition.</p>
       </div>
     </div>
   </div>
 </section>
 
-{# SERVICES SECTION #}
-<section class="section section-accent">
+{# SERVICES PREVIEW SECTION #}
+<section class="section section-light">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">What We Provide</span>
       <h2>Complete Marketing Solutions for Sports Surface Professionals</h2>
       <p>Everything you need to dominate your local market:</p>
     </div>
@@ -130,7 +137,7 @@ layout: base.njk
       <div class="card">
         <h3>{{ service.name }}</h3>
         <p>{{ service.description }}</p>
-        <a href="{{ service.url | url }}" class="btn btn-outline-light">Learn More</a>
+        <a href="{{ service.url | url }}" class="btn btn-outline">Learn More</a>
       </div>
       {% endfor %}
     </div>
@@ -141,43 +148,44 @@ layout: base.njk
 <section class="section">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">Market Specialization</span>
       <h2>Specialized Marketing for Every Sport Surface</h2>
       <p>We understand the unique opportunities in each market:</p>
     </div>
     
-    <div class="grid grid-5" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-      <div class="card">
-        <div class="card-icon">🎾</div>
-        <h3>Tennis Courts</h3>
-        <p>$4.3B market with strong resurfacing demand</p>
+    <div class="grid grid-3">
+      <div class="card-simple">
+        <h4>Tennis Courts</h4>
+        <p class="text-muted">$4.3B market with strong resurfacing demand</p>
       </div>
       
-      <div class="card">
-        <div class="card-icon">🏀</div>
-        <h3>Basketball Courts</h3>
-        <p>Year-round demand across residential and institutional</p>
+      <div class="card-simple">
+        <h4>Basketball Courts</h4>
+        <p class="text-muted">Year-round demand across residential and institutional</p>
       </div>
       
-      <div class="card">
-        <div class="card-icon">🏓</div>
-        <h3>Pickleball Courts</h3>
-        <p>Fastest growing sport with massive conversion opportunities</p>
+      <div class="card-simple">
+        <h4>Pickleball Courts</h4>
+        <p class="text-muted">Fastest growing sport with massive conversion opportunities</p>
       </div>
       
-      <div class="card">
-        <div class="card-icon">🏃</div>
-        <h3>Running Tracks</h3>
-        <p>School and university contracts with long project cycles</p>
+      <div class="card-simple">
+        <h4>Running Tracks</h4>
+        <p class="text-muted">School and university contracts with long project cycles</p>
       </div>
       
-      <div class="card">
-        <div class="card-icon">🏟️</div>
-        <h3>Multi-Sport</h3>
-        <p>Highest revenue per project for community facilities</p>
+      <div class="card-simple">
+        <h4>Multi-Sport Facilities</h4>
+        <p class="text-muted">Highest revenue per project for community facilities</p>
+      </div>
+      
+      <div class="card-simple">
+        <h4>Court Resurfacing</h4>
+        <p class="text-muted">Recurring revenue opportunities with existing facilities</p>
       </div>
     </div>
     
-    <div class="text-center" style="margin-top: 2rem;">
+    <div class="text-center mt-xl">
       <a href="/industries/" class="btn btn-outline">View All Industries</a>
     </div>
   </div>
@@ -187,18 +195,30 @@ layout: base.njk
 <section class="section section-light">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">Proven Results</span>
       <h2>Real Results for Sports Surface Contractors</h2>
     </div>
     
-    <div class="grid grid-1">
-      <div class="card" style="text-align: center; padding: 2rem;">
+    <div class="card">
+      <div class="text-center">
         <h3>Best Sports Surfaces: Zero to Page 1 in 60 Days</h3>
-        <p style="font-size: 1.1rem; margin: 1rem 0;">From invisible online presence to dominating local search for "tennis court contractor Portland". First organic revenue generated within 30 days.</p>
-        <div style="display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap;">
-          <div><strong>179%</strong> increase in organic traffic</div>
-          <div><strong>$47K</strong> first month revenue</div>
-          <div><strong>Page 1</strong> rankings for target keywords</div>
+        <p class="text-large">From invisible online presence to dominating local search for "tennis court contractor Portland". First organic revenue generated within 30 days.</p>
+        
+        <div class="stats-bar mt-lg mb-lg">
+          <div class="stat-item">
+            <div class="stat-number">179%</div>
+            <div class="stat-label">increase in organic traffic</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">$47K</div>
+            <div class="stat-label">first month revenue</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Page 1</div>
+            <div class="stat-label">rankings for target keywords</div>
+          </div>
         </div>
+        
         <a href="/case-studies/" class="btn btn-primary">Read Full Case Study</a>
       </div>
     </div>
@@ -209,13 +229,14 @@ layout: base.njk
 <section class="section section-dark">
   <div class="container">
     <div class="section-header">
+      <span class="section-label">Ready to Get Started?</span>
       <h2>Ready to Elevate Your Sports Surface Business?</h2>
       <p>Stop losing projects to contractors with inferior work but superior marketing. Join the collective of sports surface professionals who dominate their markets through strategic digital marketing.</p>
     </div>
     
     <div class="text-center">
-      <a href="{{ site.cta.url | url }}" class="btn btn-accent btn-large">{{ site.cta.text }}</a>
-      <p style="margin-top: 1rem; color: rgba(255,255,255,0.8);">
+      <a href="{{ site.cta.url | url }}" class="btn btn-primary btn-large">{{ site.cta.text }}</a>
+      <p class="mt-md text-muted">
         <strong>What happens next:</strong> 15-minute strategy call → Custom market analysis → Marketing engine launch
       </p>
     </div>
