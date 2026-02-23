@@ -225,6 +225,9 @@ p {
 /* Section Patterns */
 .section {
   padding: var(--space-3xl) 0; /* 48px mobile */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -287,7 +290,7 @@ p {
 /* Grid Systems */
 .grid {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
 .grid-1 { grid-template-columns: 1fr; }
@@ -549,9 +552,12 @@ p {
   border-radius: var(--border-radius);
   padding: var(--space-lg);
   transition: var(--transition);
-  height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.grid .card {
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -597,9 +603,21 @@ p {
    HERO SECTION
    ========================================================================== */
 .hero {
-  padding: calc(70px + var(--space-3xl)) 0 var(--space-5xl);
+  padding: calc(70px + var(--space-3xl)) 0 var(--space-3xl);
   background: var(--white);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-bottom: var(--space-4xl);
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-bottom: var(--space-5xl);
+  }
 }
 
 .hero-content {
@@ -935,7 +953,7 @@ textarea {
 
 .mb-0 { margin-bottom: 0 !important; }
 .mb-sm { margin-bottom: var(--space-sm) !important; }
-.mb-md { margin-bottom: var(--space-md) !important; }
+.mb-md { margin-bottom: var(--space-lg) !important; }
 .mb-lg { margin-bottom: var(--space-lg) !important; }
 .mb-xl { margin-bottom: var(--space-xl) !important; }
 
